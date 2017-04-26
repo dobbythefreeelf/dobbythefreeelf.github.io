@@ -1,23 +1,8 @@
 <html>
 <head>
-<title>Download gen2 installation iso or portage snapshot</title>
+<title>Download gen2 installation iso</title>
 </head>
 <body>
-<?php
-
-$content = $_GET['file'] == 'stage3' ? 'http://mirror.bytemark.co.uk/gentoo/releases/amd64/autobuilds/latest-stage3-amd64-nomultilib.txt' : 'http://mirror.bytemark.co.uk/gentoo/releases/amd64/autobuilds/latest-install-amd64-minimal.txt';
-
-$location = explode(' ',explode("\n", $content)[2])[0];
-
-$location = "http://mirror.bytemark.co.uk/gentoo/releases/amd64/autobuilds/$location";
-
-header("Location: $location");
-
-print $location;
-
-?>
-
-print $location
 
 cheers...
 
