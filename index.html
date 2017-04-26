@@ -4,7 +4,6 @@
 </head>
 <body>
 <?php
-error_reporting(E_ALL);
 
 $content = $_GET['file'] == 'stage3' ? 'http://mirror.bytemark.co.uk/gentoo/releases/amd64/autobuilds/latest-stage3-amd64-nomultilib.txt' : 'http://mirror.bytemark.co.uk/gentoo/releases/amd64/autobuilds/latest-install-amd64-minimal.txt';
 
@@ -18,7 +17,7 @@ print $location;
 
 ?>
 
-print("$locatiom")
+print $location
 
 cheers...
 
